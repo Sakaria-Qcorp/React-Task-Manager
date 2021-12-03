@@ -1,10 +1,11 @@
-
+import Button from "./Button";
 
 const Header = ({title}) => {
     return (
         <div>
-            <header>
-                <h1 style ={headerStyle}>{title}</h1>
+            <header className="header">
+                <h1>{title}</h1>
+           <Button color="green" text="WasssaUPP" />
             </header>
             
         </div>
@@ -14,11 +15,12 @@ const Header = ({title}) => {
 Header.defaultProps = {
 title :"Task Manager",
 };
+/*
 const headerStyle = {
 
   color :"blue",
   backgroundColor :"yellow",  
-}
+}*/
 /*
 Header.propTypes = {
     title: PropTypes.string.isRequired,
